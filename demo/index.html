@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="youtube"></div>
+    <script src="../ytplayer.js"></script>
+    <script>
+    YTPlayer.ready().then(function () {
+      window.player = new YTPlayer({
+        el      : 'youtube',
+        videoId : 'OgGuF_0d0Ps'
+      });
+    });
+    </script>
+  </body>
+</html>

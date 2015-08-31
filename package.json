@@ -4,36 +4,42 @@
   "description": "Wrapper for YouTube iframe API.",
   "main": "dest/ytplayer.min.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "tsc src/ytplayer.ts --outDir lib --module commonjs --watch"
   },
   "author": "Yu Isoda <isoda@maboroshi.biz> (http://isoden.me)",
   "license": "MIT",
-  "browserify": {
-    "transform": [
-      [
-        "babelify",
-        {
-          "stage": 0
-        }
-      ]
-    ]
-  },
   "dependencies": {
-    "@isoden/eveemi": "^1.1.2",
+    "@isoden/eveemi": "^1.1.5",
     "es6-promise": "^3.0.2"
   },
   "devDependencies": {
-    "babel": "^5.8.23",
-    "babelify": "^6.2.0",
-    "browserify": "^11.0.1",
-    "gulp": "^3.9.0",
-    "gulp-load-plugins": "^0.10.0",
+    "@lib/dependency-example": "0.0.4",
+    "babel": "^5.6.4",
+    "browserify": "^10.2.4",
+    "chai": "^3.0.0",
+    "del": "^1.2.0",
+    "gulp": "^3.8.8",
+    "gulp-espower": "^0.10.1",
+    "gulp-header": "^1.1.1",
+    "gulp-load-plugins": "^0.6.0",
+    "gulp-mocha": "^2.1.2",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.0.1",
     "gulp-util": "^3.0.6",
-    "object-assign": "^4.0.1",
+    "gulp-watch": "^4.2.4",
+    "mocha": "^2.2.5",
+    "object-assign": "^3.0.0",
+    "power-assert": "^0.11.0",
+    "run-sequence": "^1.1.1",
+    "tsify": "^0.11.10",
+    "typescript": "^1.5.3",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
-    "watchify": "^3.3.1"
+    "watchify": "^3.2.3",
+    "zuul": "^3.2.0"
   },
   "repository": {
     "type": "git",
